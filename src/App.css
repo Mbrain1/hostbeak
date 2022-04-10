@@ -77,6 +77,10 @@ input[type="checkbox"] ~ svg  {
     @apply w-full border-b-[3px] border-stone-200 focus:outline-0 text-blue-900 focus:border-blue-900 ;
   }
 
+  select {
+    @apply bg-white;
+  }
+
     .form-group {
       @apply relative z-20;
     }

@@ -13,7 +13,7 @@ const styles = {
 		activeSvgWrapper: `bg-blue-700`,
 		innerLink : `text-base md:text-xl text-gray-700 hover:text-blue-700 font-medium`,
 		innerLinkWrapper : `space-y-3`,
-		acceptPayment : `text-base md:text-2xl bg-blue-700 rounded-lg py-3 flex items-center space-x-2 text-white px-2 w-full`
+		acceptPayment : `text-sm md:text-2xl bg-blue-700 rounded-lg py-3 flex items-center space-x-2 text-white px-2 w-full`
 	}
 
 const Sidebar = ({ isSidebarOpen } : any) => {
@@ -34,7 +34,7 @@ const Sidebar = ({ isSidebarOpen } : any) => {
 	}
 
 	return (
-		<div className={`${isSidebarOpen ? 'w-3/5 md:w-0' : 'w-0 md:w-2/6' } px-2 overflow-hidden bg-green-200 min-h-screen pt-5 space-y-7`}>
+		<div className={`${isSidebarOpen ? 'w-3/4 md:w-0' : 'w-0 md:w-2/6' } px-2 overflow-hidden bg-green-200 min-h-screen pt-5 space-y-7`}>
 			<ul className={`space-y-4 flex flex-col justify-center border-b-2`}>
 				<li>
 					<div 

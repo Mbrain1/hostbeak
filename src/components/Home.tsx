@@ -2,8 +2,8 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import { BsCheckLg } from "react-icons/bs";
 const styles = {
-	label : `text-xl font-medium text-gray-500`,
-	formInput : `form-control py-1 opacity-90 text-2xl font-bold placeholder:font-medium`,
+	label : `text-base md:text-xl font-medium text-gray-500`,
+	formInput : `form-control py-1 opacity-90 text-lg md:text-2xl font-bold placeholder:font-medium`,
 	formGroup: `form-group space-y-2`,
 	formCheckbox: `rounded-lg appearance-none checked:bg-blue-500 checked:outline-none checked:border-none bg-gray-200 cursor-pointer h-8 w-8 border border-gray-300`
 }
@@ -51,7 +51,7 @@ const Home = () => {
 								<input type="password" className={`${styles.formInput}`} placeholder='Enter your password' />
 							</div>
 
-							<div className={`${styles.formGroup} md:col-span-2 flex justify-between space-x-2 text-xl items-center`}>
+							<div className={`${styles.formGroup} md:col-span-2 flex justify-between space-x-2 text-base md:text-xl items-center`}>
 								<div className={`flex items-center space-x-3 text-gray-500`}>
 									<div className={`flex items-center relative`}>
 										<input type="checkbox" id="rme" className={`${styles.formCheckbox}`} />
@@ -59,7 +59,7 @@ const Home = () => {
 									</div>
 									<label htmlFor="rme">Remember me</label>
 								</div>
-								<NavLink to="/" className={`text-blue-500`}>Forgot Password?</NavLink>
+								<NavLink to="/" className={`text-blue-500 text-right`}>Forgot Password?</NavLink>
 							</div>
 
 							<div className={`${styles.formGroup} md:col-span-2`}>
