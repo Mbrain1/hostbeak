@@ -35,7 +35,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen } : any) => {
 	}
 
 	return (
-		<div className={`${isSidebarOpen ? 'w-3/4 md:w-0' : 'w-0 md:w-2/6' } px-2 overflow-hidden bg-green-200 min-h-screen pt-5 space-y-7`}>
+		<div className={`${isSidebarOpen ? 'w-3/4 lg:w-0' : 'w-0 lg:w-2/6' } px-2 overflow-hidden bg-green-200 min-h-screen pt-5 space-y-7`}>
 			<ul className={`space-y-4 flex flex-col justify-center border-b-2`}>
 				<li>
 					<div 

@@ -30,7 +30,7 @@ const Header = ({ setIsSidebarOpen } : any) => {
 					  <span className={`${styles.bellActive}`}></span>
 				</button>
 				<img src="/images/profile/ogoluwa.png" className={`rounded-full h-8 md:h-14 w-8 md:w-14`} />
-				<h1 className={``}>Ogoluwa</h1>
+				<h1 className={`hidden md:block`}>Ogoluwa</h1>
 				<HiOutlineChevronDown size={25} className={``} />
 			</div>
 
