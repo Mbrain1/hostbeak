@@ -66,7 +66,7 @@ const Home = () => {
 								<button className={`btn btn-lg md:btn-xl btn-primary btn-block text-xl md:text-3xl shadow-lg`}>Sign Up</button>
 							</div>
 						</form>
-						<div className={`flex justify-center space-x-2 items-center text-xl font-medium text-gray-500`}>
+						<div className={`flex justify-center space-x-2 items-center text-base md:text-xl font-medium text-gray-500`}>
 								<span>Got an Account?</span> <NavLink to="/" className={`text-blue-500`}>Sign In</NavLink>
 						</div>
 					</div>

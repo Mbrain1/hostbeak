@@ -4,7 +4,7 @@ import { AiFillCaretRight, AiFillCaretDown } from "react-icons/ai";
 import { routes } from "utils/enum";
 
 const styles = {
-		link : `flex block w-full relative cursor-pointer items-center space-x-7 md:space-x-5 px-3 md:px-8 text-base md:text-xl text-gray-400 group hover:text-gray-900`,
+		link : `flex overflow-hidden block w-full relative cursor-pointer items-center space-x-7 md:space-x-5 px-3 md:px-8 text-base md:text-xl text-gray-400 group hover:text-gray-900`,
 		activeLink : `text-gray-900`,
 		caret : `absolute right-10 text-gray-400`,
 		activeSvg : `svg-white` ,
@@ -16,9 +16,10 @@ const styles = {
 		acceptPayment : `text-sm md:text-2xl bg-blue-700 rounded-lg py-3 flex items-center space-x-2 text-white px-2 w-full`
 	}
 
-const Sidebar = ({ isSidebarOpen } : any) => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen } : any) => {
 
 	const [selected, setSelected]  =  useState<string>("purchases");
+
 
 	const caret = (isActive : boolean) => {
 		return isActive ? <AiFillCaretDown size={15} className={`${styles.caret}`} /> :
@@ -81,7 +82,7 @@ const Sidebar = ({ isSidebarOpen } : any) => {
 						{caret(selected == "purchases" ? true : false)}
 					</div>
 					<div 
-						className={`${styles.link} ${selected == "purchases" ? 'block' : 'hidden'}`}>
+						className={`${styles.link} ${selected == "purchases" ? 'pt-2 h-auto' : 'h-0'}`}>
 						<div className={`${styles.svgWrapper} invisible`}>
 							<img src="/svgs/cart.svg"  />
 						</div>
@@ -147,7 +148,7 @@ const Sidebar = ({ isSidebarOpen } : any) => {
 						{caret(selected == "reports" ? true : false)}
 					</div>
 						<div 
-						className={`${styles.link} ${selected == "reports" ? 'block' : 'hidden'}`}>
+						className={`${styles.link} ${selected == "reports" ? 'pt-2 h-auto' : 'h-0'}`}>
 						<div className={`${styles.svgWrapper} invisible`}>
 							<img src="/svgs/reports.svg"  />
 						</div>
